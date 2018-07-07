@@ -9,7 +9,6 @@
 
 export default {
     components: {
-        'slider-page': require("./SliderPage")
     },
 
     props: {

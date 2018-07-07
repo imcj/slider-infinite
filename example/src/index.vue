@@ -19,8 +19,8 @@ export default {
   name: 'App',
   
   components: {
-    "slider-infinite": require("./components/AOSlider/SliderInfinite"),
-    'slider-page': require("./components/AOSlider/SliderPage")
+    "slider-infinite": require("./components/SliderInfinite"),
+    'slider-page': require("./components/SliderPage")
   },
 
   data () {

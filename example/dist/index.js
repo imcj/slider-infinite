@@ -62,55 +62,11 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = []
-
-/* styles */
-__vue_styles__.push(__webpack_require__(12)
-)
-
-/* script */
-__vue_exports__ = __webpack_require__(13)
-
-/* template */
-var __vue_template__ = __webpack_require__(14)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-__vue_options__.__file = "/Users/cj/Code/slider-infinite/src/components/SliderPage.vue"
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-007123cd"
-__vue_options__.style = __vue_options__.style || {}
-__vue_styles__.forEach(function (module) {
-  for (var name in module) {
-    __vue_options__.style[name] = module[name]
-  }
-})
-if (typeof __register_static_styles__ === "function") {
-  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
-}
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-/* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -119,24 +75,24 @@ module.exports = __vue_exports__
 /* global Vue */
 
 /* weex initialized here, please do not move this line */
-var router = __webpack_require__(2);
-var App = __webpack_require__(6);
+var router = __webpack_require__(1);
+var App = __webpack_require__(5);
 /* eslint-disable no-new */
 new Vue(Vue.util.extend({ el: '#root', router: router }, App));
 router.push('/');
 
 /***/ }),
-/* 2 */
+/* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _vueRouter = __webpack_require__(3);
+var _vueRouter = __webpack_require__(2);
 
 var _vueRouter2 = _interopRequireDefault(_vueRouter);
 
-var _HelloWorld = __webpack_require__(4);
+var _HelloWorld = __webpack_require__(3);
 
 var _HelloWorld2 = _interopRequireDefault(_HelloWorld);
 
@@ -154,7 +110,7 @@ module.exports = new _vueRouter2.default({
 });
 
 /***/ }),
-/* 3 */
+/* 2 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2785,14 +2741,14 @@ if (inBrowser && window.Vue) {
 
 
 /***/ }),
-/* 4 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* template */
-var __vue_template__ = __webpack_require__(5)
+var __vue_template__ = __webpack_require__(4)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -2804,7 +2760,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/cj/Code/slider-infinite/src/components/HelloWorld.vue"
+__vue_options__.__file = "/Users/cj/Code/slider-infinite/example/src/components/HelloWorld.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__.style = __vue_options__.style || {}
@@ -2821,7 +2777,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 5 */
+/* 4 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -2839,21 +2795,21 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 module.exports.render._withStripped = true
 
 /***/ }),
-/* 6 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(7)
+__vue_styles__.push(__webpack_require__(6)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(8)
+__vue_exports__ = __webpack_require__(7)
 
 /* template */
-var __vue_template__ = __webpack_require__(16)
+var __vue_template__ = __webpack_require__(15)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -2865,10 +2821,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/cj/Code/slider-infinite/src/index.vue"
+__vue_options__.__file = "/Users/cj/Code/slider-infinite/example/src/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-2ba08056"
+__vue_options__._scopeId = "data-v-507f8d71"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -2883,26 +2839,18 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 7 */
+/* 6 */
 /***/ (function(module, exports) {
 
 module.exports = {
   "image": {
     "width": "700",
     "height": "700"
-  },
-  "slider-item": {
-    "fontSize": "80"
-  },
-  "frame": {
-    "width": "700",
-    "height": "700",
-    "position": "relative"
   }
 }
 
 /***/ }),
-/* 8 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2911,8 +2859,6 @@ module.exports = {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-//
-//
 //
 //
 //
@@ -2932,10 +2878,12 @@ Object.defineProperty(exports, "__esModule", {
 
 exports.default = {
   name: 'App',
+
   components: {
-    "slider-infinite": __webpack_require__(9),
-    'slider-page': __webpack_require__(0)
+    "slider-infinite": __webpack_require__(8),
+    'slider-page': __webpack_require__(12)
   },
+
   data: function data() {
     return {
       imageList: [{ src: 'http://127.0.0.1:3000/text-1.png', index: 0 }, { src: 'http://127.0.0.1:3000/text-2.png', index: 1 }, { src: 'http://127.0.0.1:3000/text-3.png', index: 2 }, { src: 'http://127.0.0.1:3000/text-4.png', index: 3 }, { src: 'http://127.0.0.1:3000/text-5.png', index: 4 }, { src: 'http://127.0.0.1:3000/text-6.png', index: 5 }]
@@ -2944,21 +2892,21 @@ exports.default = {
 };
 
 /***/ }),
-/* 9 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(10)
+__vue_styles__.push(__webpack_require__(9)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(11)
+__vue_exports__ = __webpack_require__(10)
 
 /* template */
-var __vue_template__ = __webpack_require__(15)
+var __vue_template__ = __webpack_require__(11)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -2970,10 +2918,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/cj/Code/slider-infinite/src/components/SliderInfinite.vue"
+__vue_options__.__file = "/Users/cj/Code/slider-infinite/example/src/components/SliderInfinite.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-55f65dd2"
+__vue_options__._scopeId = "data-v-6deecf6d"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -2988,23 +2936,18 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 10 */
+/* 9 */
 /***/ (function(module, exports) {
 
 module.exports = {
-  "item": {
-    "fontSize": "80"
-  },
-  "slider-item": {
-    "fontSize": "80"
-  },
   "slider": {
+    "width": 100,
     "height": "700"
   }
 }
 
 /***/ }),
-/* 11 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3020,26 +2963,10 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 exports.default = {
-    components: {
-        'slider-page': __webpack_require__(0)
-    },
+    components: {},
 
     props: {
         pages: {
@@ -3047,164 +2974,32 @@ exports.default = {
             default: []
         }
     },
+
     data: function data() {
         return {
-            items: ['a', 'b'],
             limitPages: [],
-            index: 0,
-            skipEvent: false,
-            once: false,
-            event: null,
-            keepIndex: true
+            index: 0
         };
     },
     created: function created() {
-        var _this = this;
-
-        console.log(this.limitPages);
-
-        this.limitPages = this.pages; // .slice(0, 4)
-        console.debug("created");
-        // console.debug(this.pages[0].src)
-
-        setInterval(function () {
-
-            if (_this.once) {
-                console.debug(_this.index);
-                // this.update()
-                setTimeout(function () {
-                    _this.update();
-                }, 1000);
-                _this.once = false;
-            }
-        }, 500);
+        this.limitPages = this.pages;
+        this.index = 0;
     },
 
 
     methods: {
         onChange: function onChange(event) {
-            //     return 
-            //     console.debug('change called')
-            console.debug('event index is ' + event.index + ', data index is ' + this.index);
             this.index = event.index;
-            this.event = event;
-            this.once = true;
-        },
-        update: function update() {
-            var event = this.event;
-            console.debug('event index is ' + event.index + ', data index is ' + this.index);
-
-            var start = event.index - 1 < 0 ? 0 : event.index - 1;
-            var end = event.index + 2;
-
-            if (start < 1) {
-                this.once = false;
-                return;
-            }
-
-            console.debug('start ' + start + ' end ' + end);
-            this.limitPages = this.pages.slice(start, end);
-            this.index = this.event.index - 1;
-            console.debug('first page index ' + this.limitPages[0].index);
-
-            var _iteratorNormalCompletion = true;
-            var _didIteratorError = false;
-            var _iteratorError = undefined;
-
-            try {
-                for (var _iterator = this.limitPages[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-                    var limitPage = _step.value;
-
-                    console.debug('src ' + limitPage.src + ' index ' + limitPage.index);
-                }
-            } catch (err) {
-                _didIteratorError = true;
-                _iteratorError = err;
-            } finally {
-                try {
-                    if (!_iteratorNormalCompletion && _iterator.return) {
-                        _iterator.return();
-                    }
-                } finally {
-                    if (_didIteratorError) {
-                        throw _iteratorError;
-                    }
-                }
-            }
         }
     }
 };
 
 /***/ }),
-/* 12 */
-/***/ (function(module, exports) {
-
-module.exports = {
-  "slider-item": {
-    "fontSize": "80"
-  },
-  "image": {
-    "width": "700",
-    "height": "700"
-  }
-}
-
-/***/ }),
-/* 13 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-//
-//
-//
-//
-//
-//
-
-exports.default = {
-  name: 'SliderPage',
-  components: {},
-  props: {
-    source: {
-      type: String,
-      default: ""
-    }
-  },
-  data: function data() {
-    return {};
-  }
-};
-
-/***/ }),
-/* 14 */
+/* 11 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["slider-item"]
-  }, [_c('image', {
-    staticClass: ["image"],
-    attrs: {
-      "resize": "cover",
-      "src": _vm.source
-    }
-  })])
-},staticRenderFns: []}
-module.exports.render._withStripped = true
-
-/***/ }),
-/* 15 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_vm._l((_vm.items), function(item, index) {
-    return _c('div', [_vm._v(_vm._s(item))])
-  }), _c('slider', {
+  return _c('slider', {
     staticClass: ["slider"],
     attrs: {
       "interval": "3000",
@@ -3215,16 +3010,135 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "change": _vm.onChange
     }
-  }, [_vm._l((_vm.limitPages), function(page) {
+  }, [_vm._l((_vm.limitPages), function(page, i) {
     return _vm._t("default", null, {
-      source: page.src
+      page: page,
+      index: i,
+      sliderIndex: _vm.index
     })
-  })], 2)], 2)
+  })], 2)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 
 /***/ }),
-/* 16 */
+/* 12 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = []
+
+/* script */
+__vue_exports__ = __webpack_require__(13)
+
+/* template */
+var __vue_template__ = __webpack_require__(14)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+__vue_options__.__file = "/Users/cj/Code/slider-infinite/example/src/components/SliderPage.vue"
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__.style = __vue_options__.style || {}
+__vue_styles__.forEach(function (module) {
+  for (var name in module) {
+    __vue_options__.style[name] = module[name]
+  }
+})
+if (typeof __register_static_styles__ === "function") {
+  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
+}
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 13 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+//
+//
+//
+//
+//
+
+exports.default = {
+    name: 'SliderPage',
+    components: {},
+    props: {
+
+        page: {
+            type: Object,
+            default: ""
+        },
+
+        appear: {
+            type: Boolean,
+            default: false
+        },
+
+        index: {
+            type: Number,
+            default: 0
+        },
+
+        sliderIndex: {
+            type: Number,
+            default: 0
+        }
+    },
+    data: function data() {
+        return {
+            initialized: false
+        };
+    },
+
+    watch: {
+        sliderIndex: function sliderIndex(value) {
+            if (this.index == this.sliderIndex) {
+                console.debug("SliderPage.vue sliderIndex " + value + " current page index is " + this.index + " " + Math.random());
+                this.appear = true;
+            } else {
+                if (this.appear == true) this.appear = false;
+            }
+        }
+    },
+
+    methods: {},
+
+    created: function created() {
+        if (0 == this.index) {
+            this.appear = true;
+        }
+    }
+};
+
+/***/ }),
+/* 14 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [(_vm.appear == true) ? _vm._t("default", null, {
+    page: _vm.page
+  }) : _vm._e()], 2)
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+
+/***/ }),
+/* 15 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -3235,11 +3149,25 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     scopedSlots: _vm._u([{
       key: "default",
       fn: function(props) {
-        return [_c('slider-page', {
+        return [_c('div', [_c('slider-page', {
           attrs: {
-            "source": props.source
-          }
-        })]
+            "page": props.page,
+            "index": props.index,
+            "sliderIndex": props.sliderIndex
+          },
+          scopedSlots: _vm._u([{
+            key: "default",
+            fn: function(props) {
+              return [_c('image', {
+                staticClass: ["image"],
+                attrs: {
+                  "resize": "cover",
+                  "src": props.page.src
+                }
+              })]
+            }
+          }])
+        })], 1)]
       }
     }])
   })], 1)
