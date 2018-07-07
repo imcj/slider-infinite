@@ -1,6 +1,6 @@
 <template>
     <div>
-        <slot :page="page" v-if="appear == true"></slot>
+        <image class="image" resize="cover" :src="page.src"  v-if="appear"></image>
     </div>
 </template>
 <script>
@@ -37,12 +37,14 @@ export default {
   },
   watch: {
       sliderIndex(value) {
+          this.appear = true
           if (this.index == this.sliderIndex) {
               console.debug("SliderPage.vue sliderIndex " + value + " current page index is " + this.index + " " + Math.random())
               this.appear = true
           } else {
-              if (this.appear == true)
+              if (this.appear == true) {
                 this.appear = false
+              }
           }
       }
   },
@@ -58,3 +60,9 @@ export default {
   }
 }
 </script>
+<style scoped>
+  .image {
+    width: 700px;
+    height: 700px;
+  }
+</style>

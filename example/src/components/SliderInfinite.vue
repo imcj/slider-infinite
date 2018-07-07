@@ -1,8 +1,10 @@
 <template>
-    <slider class="slider" interval="3000" infinite="false" auto-play="false" @change="onChange" :index="index">
-        <slot v-for="(page, i) in limitPages" :page="page" :index="i" :slider-index="index">
-        </slot>
-    </slider>
+    <div>
+        <slider class="slider" interval="3000" infinite="false" auto-play="false" @change="onChange" :index="index">
+            <slot v-for="(page, i) in limitPages" :page="page" :index="i" :slider-index="index">
+            </slot>
+        </slider>
+    </div>
 </template>
 
 <script>
@@ -41,7 +43,7 @@ export default {
 
 <style scoped>
     .slider {
-        width: 100%;
+        width: 750px;
         height: 700px;
     }
 </style>
