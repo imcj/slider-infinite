@@ -2873,8 +2873,6 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
-//
-//
 
 exports.default = {
   name: 'App',
@@ -3149,7 +3147,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     scopedSlots: _vm._u([{
       key: "default",
       fn: function(props) {
-        return [_c('div', [_c('slider-page', {
+        return [_c('slider-page', {
           attrs: {
             "page": props.page,
             "index": props.index,
@@ -3167,7 +3165,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
               })]
             }
           }])
-        })], 1)]
+        })]
       }
     }])
   })], 1)

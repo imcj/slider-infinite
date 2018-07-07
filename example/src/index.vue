@@ -2,13 +2,11 @@
   <div>
     <slider-infinite v-bind:pages="imageList">
       <template slot-scope="props">
-        <div>
           <slider-page :page="props.page" :index="props.index" :slider-index="props.sliderIndex">
             <template slot-scope="props">
               <image class="image" resize="cover" :src="props.page.src"></image>
             </template>
           </slider-page>
-        </div>
        </template>
     </slider-infinite>
   </div>
