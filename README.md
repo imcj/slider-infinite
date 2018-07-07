@@ -1,6 +1,8 @@
 Slider infinite
 ================
 
+拷贝`example/src/components/`目录内的`SliderInfinite`和`SliderPage`到自己的组件目录。
+
 # Guide
 
 ```
